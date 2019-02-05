@@ -30,7 +30,6 @@ def gridSearch(G, P):
     y = set()
 
     while i < R and j < r:
-        # x = set(m.start() for m in re.finditer(P[j], G[i]))
         x = occurs(G[i], P[j])
         if not bool(x):  # if not found increase index to try next string
             b = False
